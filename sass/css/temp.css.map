@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,UAKC,CAJD,WAAW,CAAE,4BAA4B,CACzC,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,MAAM,CACnB,GAAG,CAAE,sGAAuG,CAG5G,IAAK,CACD,WAAW,CAAE,uCAAuC",
-"sources": ["../components/temp.scss"],
-"names": [],
-"file": "temp.css"
-}
