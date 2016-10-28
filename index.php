@@ -27,9 +27,12 @@
     <textarea name="message" placeholder="Message" id="message_body" maxlength=500></textarea><br/>
     <input type="submit">
   </form>
+
+  <br/><br/>
+<a href="<? echo $message_path."/".$message->id; ?>.json">Your Message</a>
+
 </body>
 
-<br/><br/>
-<a href="<? echo $message_path."/".$message->id; ?>.json">Your Message</a>
+
 
 </html>
