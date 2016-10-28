@@ -28,6 +28,8 @@ $(document).ready(function() {
 	uuid=checkCookie("GatherWidgetID");
     appLang = 'es';
 
+ var obj = {"nissan": "sentra", "color": "green"};
+ localStorage.setItem('myStorage', JSON.stringify(obj));
 
 });
 
