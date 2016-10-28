@@ -1,0 +1,86 @@
+{
+	"domains": [{
+		"_id": "580fb49e0a975a2f4cc8eb25",
+		"name": "ESCALATOR STAND LAW",
+		"i18n": {
+			"primary": "en",
+			"others": []
+		},
+		"fb_text": "",
+		"twitter_text": "",
+		"client_id": "580fb07c0a975a2f4cc8eb20",
+		"desc": "PAL0001: Considerate share public space.",
+		"buttons_text": "Elegir una opción",
+		"viewIconLabel": "Map and Reports",
+		"createIconLabel": "Your Vote",
+		"origBackgroundUrl": "https://gather.siineserver.com/GatherServerLive/GatherAdmin/imgs/defaultBackground.jpg",
+		"backgroundUrl": "https://gather.siineserver.com/GatherServerLive/GatherAdmin/imgs/defaultBackgroundEdited.jpg",
+		"bannerUrl": "https://gather.siineserver.com/imageslive/580fb07c0a975a2f4cc8eb20/580fb6c50a975a2f4cc8eb28.png",
+		"countries": ["GB", "ALL"],
+		"active": true,
+		"showName": true,
+		"hidePublicMap": true,
+		"fields": [{
+			"@type": "TypeSignature",
+			"_id": 9,
+			"label": "Your Reasonable Name",
+			"mandatory": false,
+			"id": "580fb90e0a975a2f4cc8eb2c"
+		}, {
+			"@type": "TypeInformationField",
+			"_id": 14,
+			"label": "Standing to the Right on Escalators",
+			"description": "In public moving stairways there is often some people who wish to stand and be carried up the escalator, while others prefer to step up or down the stairs to move at a faster pace or simply keep moving.  This law commits you to standing to one side (the left or right is acceptable provided that all standers follow using the same side) and making reasonable efforts to leave space for the walkers to move.  \nSimilar cases in which standing at rest blocks in its entirety a passage for people to move through in public space, forcing them to either request that you move, or wait for you to do so, in the context of public space for the purpose of foot transit, is aslo suggested to be covered by this law.",
+			"mandatory": false,
+			"id": "580fba180a975a2f4cc8eb32"
+		}, {
+			"@type": "TypeVariableTextLabel",
+			"_id": 11,
+			"label": "Do you adopt this law?",
+			"description": "",
+			"textOptions": ["Yes", "No"],
+			"mandatory": false,
+			"multiselection": true,
+			"id": "580fb90e0a975a2f4cc8eb2d"
+		}, {
+			"@type": "TypeProgressPercentage",
+			"_id": 1,
+			"label": "Support Strength",
+			"description": "",
+			"mandatory": false,
+			"max_value": 100,
+			"step": "1",
+			"id": "580fb90e0a975a2f4cc8eb2e"
+		}, {
+			"@type": "TypeVariableTextLabel",
+			"_id": 11,
+			"label": "Exemptions",
+			"description": "",
+			"textOptions": ["Emergency", "Talking Friend", "Bags", "Gridlock", "None"],
+			"mandatory": false,
+			"multiselection": true,
+			"id": "580fb90e0a975a2f4cc8eb2f"
+		}, {
+			"@type": "TypeVariableImageLabel",
+			"_id": 15,
+			"label": "Non-Adopter Approval",
+			"description": "",
+			"textOptions": ["Encouraged", "Fine", "OK", "A bit off", "Concerning", "Not Acceptable"],
+			"imageOptions": ["https://gather.siineserver.com/GatherServerLive/GatherAdmin/imgs/default_src.png", "https://gather.siineserver.com/GatherServerLive/GatherAdmin/imgs/default_src.png", "https://gather.siineserver.com/GatherServerLive/GatherAdmin/imgs/default_src.png", "https://gather.siineserver.com/GatherServerLive/GatherAdmin/imgs/default_src.png", "https://gather.siineserver.com/GatherServerLive/GatherAdmin/imgs/default_src.png", "https://gather.siineserver.com/GatherServerLive/GatherAdmin/imgs/default_src.png"],
+			"mandatory": false,
+			"multiselection": true,
+			"showTextUnderImages": true,
+			"id": "580fb90e0a975a2f4cc8eb30"
+		}, {
+			"@type": "TypeTextarea",
+			"_id": 5,
+			"label": "Comments",
+			"description": "",
+			"mandatory": false,
+			"id": "580fb90e0a975a2f4cc8eb31"
+		}],
+		"map_text": "--Your Reasonable Name-- Adopted PAL 0001 with a support strength of&nbsp;--Support Strength--.<br>Exemptions:--Exemptions--<br><br>View of Non-Adopters:&nbsp;--Non-Adopter Approval--<br>",
+		"summary_text": "Adopted: --Do you adopt this law?-- by: --Your Reasonable Name--",
+		"long_desc": "Personally Adopted Law 0001:  Considerate use of public space.\n\nAdopting this law commits you in the measure voted to considerate actions in the use of public space.\n"
+	}]
+}
