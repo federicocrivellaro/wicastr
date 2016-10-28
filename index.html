@@ -1,31 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-Equiv="Pragma" Content="no-cache">
-    <meta http-Equiv="Expires" Content="0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--320-->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Gather Report</title>
+  <meta charset="UTF-8">
+  <title>WiList</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-  <form href="#" id="message_sending_form">      
-    <input name="user_id" id="message_user_id" type="text" hidden>
-    <input name="id" id="message_id" type="text" hidden>
-    <input class="stack" name="title" id="message_title" type="text" placeholder="Title" maxlength=60 autofocus>
-    <input class="stack" name="name" id="message_name" type="text" placeholder="Your Name" maxlength=30>
-    <input class="stack" name="phone" id="message_phone" type="text" placeholder="Your Phone Number" maxlength=14>
-    <select class="stack" name="category" id="message_category" title="Category selection"></select>
-    <select class="stack" name="list" id="message_list" title="WiList selection"></select>
-    <textarea class="stack" name="message" placeholder="Message" id="message_body" maxlength=500></textarea>
-  <button class="submit">Submit</button>
-</form>
+  <form action="/new_message.php" method="post">
+    <input name="title"type="text" placeholder="Title" maxlength=60 autofocus><br/>
+    <input name="name" type="text" placeholder="Your Name" maxlength=30><br/>
+    <input name="phone" type="text" placeholder="Your Phone Number" maxlength=14><br/>
+    <select name="category" title="Category selection">
+      <option>Select Category</option>
+      <option value="real_estate">Real Estate</option>
+      <option value="advertising">Advertsing</option>
+      <option value="events">Events</option>
+    </select><br/>
+    </select><br/>
+    <select name="list" title="WiList selection">
+      <option>Select Destination</option>
+      <option value="paris">Paris</option>
+      <option value="london">London</option>
+      <option value="berlin">Berlin</option>
+    </select><br/>
+    <textarea name="message" placeholder="Message" id="message_body" maxlength=500></textarea><br/>
+    <input type="submit">
+  </form>
 </body>
 
 </html>
