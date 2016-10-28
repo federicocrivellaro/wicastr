@@ -1,0 +1,26 @@
+@import 'variable';
+
+@import 'font';
+
+@import 'mixin-animations';
+
+
+/*----------------------------------
+ STYLE
+----------------------------------*/
+.textcenter{
+    text-align:center;
+}
+
+h6{
+    font-weight: 200;
+    font-family: 'Lato Light';
+    font-size:1rem;
+
+}
+
+.backgroundGradient{
+    @include gradient(#bdc3c7,#2c3e50, #bdc3c7);
+
+}
+
