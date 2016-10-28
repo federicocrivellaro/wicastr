@@ -26,28 +26,8 @@ var numberOfGraphs;
 $(document).ready(function() {
 
 	uuid=checkCookie("GatherWidgetID");
-
     appLang = 'es';
 
-   function download(text, name, type) {
-        var a = document.createElement("a");
-        var file = new Blob([text], {type: type});
-        a.href = URL.createObjectURL(file);
-        a.download = name;
-        a.click();
-    }
-
-
-    function saveText(text, filename){
-      var a = document.createElement('a');
-      a.setAttribute('href', 'data:text/plain;charset=utf-u,'+encodeURIComponent(text));
-      a.setAttribute('download', filename);
-      a.click();
-    }
-
-    var obj = {a: "Hello", b:"World"};
-    saveText( JSON.stringify(obj), "filename.json" );
-    download(obj, 'test.txt', 'text/plain');
 
 });
 
