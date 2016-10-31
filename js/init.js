@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
     function getReports(file) {
-        var file="reportstest";
+        var file="reports";
         $.ajax({
             // Post select to url.
             type: 'post',

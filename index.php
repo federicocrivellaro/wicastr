@@ -1,3 +1,4 @@
+
 <html>
 
 <head>
@@ -24,11 +25,16 @@
     <script type="text/javascript" src="assets/libraries/jquery/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
     <script type="text/javascript" src="js/dataCheckConversion.js"></script>
-    <script type="text/javascript" src="js/form.js"></script>
     <script type="text/javascript" src="js/init.js"></script>
 
     <!-- /build -->
 
+<?php
+  phpinfo();
+  ?>
+
+
 </body>
+
 
 </html>
