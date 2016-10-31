@@ -22,7 +22,7 @@ $(document).ready(function() {
                 'charset':'utf-8'
             },
             type: 'POST',
-            url: 'http://localhost:8000/post.php',
+            url: 'post.php',
             cache: false,
             timeout: 2000,
             dataType: 'json',
@@ -42,7 +42,7 @@ $(document).ready(function() {
         $.ajax({
             // Post select to url.
             type: 'post',
-            url: 'http://localhost:8000/get.php?file=reports',
+            url: 'get.php?file=reports',
             dataType: 'json', // expected returned data format.
             success: function(data) {
                 drawReports(data);
