@@ -6,6 +6,7 @@ var reports;
 
 $(document).ready(function() {
 
+    /*
     $('.page').each(function(){
         var pageIndex=$(this).index();
         $(this).hammer().bind("swiperight",function(ev){
@@ -29,12 +30,12 @@ $(document).ready(function() {
         });
         
     });
-   
+   */
 
 
-    getJson('statics/revisiones',function(){
+    /*getJson('statics/revisiones',function(){
         pieBarChart('#dashboard',fData,fOptions);
-    });
+    });*/
 
 
     getJson('cache/reports',function(){
