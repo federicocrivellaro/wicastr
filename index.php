@@ -15,10 +15,10 @@
 
 <body>
   <div class="pages">
-    <div class="page active">
+    <div class="page">
       <div class="list"></div>
     </div>
-    <div class="page" >
+    <div class="page active">
       <form action="/post.php" method="post">
         <input type="range" name="value">
         <!--
