@@ -27,20 +27,14 @@
         </section>
         -->
         <button type="submit"> SUBMIT</button>
-        <div class="feedback"></div>
-        <div>
-        <p>from js</p>
-        <div class="val"></div>
-      </div>
       </form>
       
     </div>
-    <!--
     <div class="page">  
       <div class="container-fluid">
         <div id="dashboard" class="pieBarChart"></div>
       </div>  
-    </div> --> 
+    </div>
   </div>  
 
 

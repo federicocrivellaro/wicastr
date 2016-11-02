@@ -6,7 +6,7 @@ var reports;
 
 $(document).ready(function() {
 
-    /*
+    
     $('.page').each(function(){
         var pageIndex=$(this).index();
         $(this).hammer().bind("swiperight",function(ev){
@@ -30,18 +30,18 @@ $(document).ready(function() {
         });
         
     });
-   */
+   
 
-
-    /*getJson('statics/revisiones',function(){
-        pieBarChart('#dashboard',fData,fOptions);
+    /*
+    getJson('statics/revisiones',function(){
+        
     });*/
 
 
     getJson("reports",function(){
         var data=this;
         drawReports(data);
-//        dashboard('#dashboard',lawComparison["entities"],lawComparison["values"]);
+        pieBarChart('#dashboard',fData,fOptions);
     });
 
     radius=(($( window ).innerWidth())/2) - 30 ;
