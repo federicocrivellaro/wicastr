@@ -15,7 +15,7 @@
     $reports = array();
     fwrite($reports_file, json_encode($reports));
     fclose($reports_file);
-    chwon($app_path."/cache/reports.json", "www-data");
+    //chown($app_path."/cache/reports.json", "www-data");
 
   }
 

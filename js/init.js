@@ -38,7 +38,7 @@ $(document).ready(function() {
     });*/
 
 
-    getJson('cache/reports',function(){
+    getJson("reports",function(){
         var data=this;
         drawReports(data);
 //        dashboard('#dashboard',lawComparison["entities"],lawComparison["values"]);
@@ -98,8 +98,8 @@ $(document).ready(function() {
             url: 'get.php?file='+file,
             dataType: 'json', // expected returned data format.
             success: function(data) {
+                console.log(data);
                 callback.call(data);
-                
             },
             complete: function(data) {
                 // do something, not critical.
