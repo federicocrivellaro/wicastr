@@ -19,6 +19,11 @@
       <div class="list"></div>
     </div>
     <div class="page active">
+      <?php
+         $app_path = getcwd();
+          echo substr(sprintf('%o', fileperms($app_path."/data/cache")), -4);
+      ?>
+      
       <form action="/post.php" method="post">
         <input type="range" name="value">
         <!--
@@ -26,7 +31,8 @@
           <div class="control">
               <div id="type"></div>
           </div>
-        </section>-->
+        </section>
+        -->
         <button type="submit"> SUBMIT</button>
       </form>
     </div>
