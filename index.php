@@ -17,7 +17,6 @@
   <div class="pages">
     <div class="page active">
       <div class="list"></div>
-      <div class="feedback"></div>
       <form action="/post.php" method="post">
         <input type="range" name="value">
         <!--
@@ -28,7 +27,13 @@
         </section>
         -->
         <button type="submit"> SUBMIT</button>
+        <div class="feedback"></div>
+        <div>
+        <p>from js</p>
+        <div class="val"></div>
+      </div>
       </form>
+      
     </div>
     <!--
     <div class="page">  
