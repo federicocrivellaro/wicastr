@@ -13,18 +13,26 @@ function barchart(id,data) {
         svg = d3.select(id)
             .append("svg");
 
-        var bar = svg.selectAll(".bar")
+        var barGroup=svg.selectAll("g")
             .data(data)
             .enter()
+            .append("g");
+
+        var bar = barGroup
             .append("rect")
-                .attr("class", "bar");        
-                
+                .attr("class", "bar");  
+
+        var text=barGroup.
+            append("text")
+                .text(function(d){ return d.parameter;})
+                .attr("fill","#fff");
+
         me.render();
     };
 
     me.update= function(data){
     
-        var bar = svg.selectAll(".bar")
+        var bar = svg.selectAll("g")
             .data(data)
             .enter(); 
 
@@ -43,14 +51,21 @@ function barchart(id,data) {
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom);
 
+        svg.selectAll("g")
+             .attr('transform',function(d, i) { return "translate("+i * barWidth+",0)"});
+
         svg.selectAll(".bar")
             .attr("fill",function(d,i) { return colors[i]; })
-            .attr("x", function(d, i) { return i * barWidth; })
             .attr("width", barWidth)
             .transition().duration(300)
                 .attr("y", function(d) { return scaleY(d.total); })
                 .attr("height", function(d) { return height - scaleY(d.total); });
-              
+
+        svg.selectAll("text")
+            .attr("class", "parameters")
+            .attr("y", height-2)
+            .attr("x",barWidth/2)
+            .attr("text-anchor","middle");
     };
 
 
