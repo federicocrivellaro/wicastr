@@ -49,7 +49,7 @@ $(document).ready(function() {
                 {"parameter":"61-70","total":4}, 
                 {"parameter":"71-80","total":6},
                 {"parameter":"81-90","total":2},
-                {"parameter":"91-100","total":1},      
+                {"parameter":"91-100","total":1}      
             ];
         }
         bottomBarcart= new barchart('#barchart',reports);
