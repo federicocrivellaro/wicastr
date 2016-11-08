@@ -62,7 +62,7 @@ function barchart(id,data) {
 
         svg.selectAll("text")
             .attr("class", "parameters")
-            .attr("y", height-2)
+            .attr("y", height-10)
             .attr("x",barWidth/2)
             .attr("text-anchor","middle");
     };
