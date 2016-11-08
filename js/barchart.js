@@ -22,8 +22,7 @@ function barchart(id,data) {
             .append("rect")
                 .attr("class", "bar");  
 
-        var text=barGroup.
-            append("text")
+        var text=barGroup.append("text")
                 .text(function(d){ return d.parameter;})
                 .attr("fill","#fff");
 
